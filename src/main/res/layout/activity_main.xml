@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/TEmail"
+            android:layout_width="62dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="80dp"
+            android:text="E-mail :" />
+
+        <EditText
+            android:id="@+id/EEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TEmail"
+            android:layout_toRightOf="@+id/TEmail"
+
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/TPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Password : " />
+
+
+        <EditText
+            android:id="@+id/EPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/EEmail"
+            android:layout_marginTop="30dp"
+            android:layout_alignBaseline="@+id/TPass"
+            android:layout_toRightOf="@+id/TPass"
+
+            android:ems="10"
+
+            android:inputType="textPassword" />
+
+
+        <Button
+            android:id="@+id/BSignIN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+
+            android:text="Sign-in" />
+
+        <Button
+            android:id="@+id/BSignUP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Sign-UP" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
